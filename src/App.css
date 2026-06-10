@@ -1,0 +1,384 @@
+/* Estilos específicos para la aplicación Café 404 */
+
+/* Hero / Banner Principal */
+.hero-banner {
+  position: relative;
+  min-height: 80vh;
+  background: linear-gradient(rgba(13, 7, 4, 0.45), rgba(13, 7, 4, 0.95)), url('https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-cream);
+  padding: 40px 20px;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  background: rgba(26, 15, 7, 0.75);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid rgba(200, 150, 62, 0.2);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, var(--color-cream), var(--color-gold));
+  -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-banner {
+    min-height: 60vh;
+  }
+}
+
+/* Card Estilo Cafe 404 */
+.coffee-card {
+  background-color: var(--color-mocha);
+  border: 1px solid rgba(200, 150, 62, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  height: 100%;
+}
+
+.coffee-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(200, 150, 62, 0.15);
+  border-color: rgba(200, 150, 62, 0.3);
+}
+
+.coffee-card-img-container {
+  position: relative;
+  overflow: hidden;
+  height: 220px;
+}
+
+.coffee-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.coffee-card:hover .coffee-card-img {
+  transform: scale(1.1);
+}
+
+.coffee-card-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--color-green-panda);
+  color: var(--color-dark-espresso);
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  z-index: 10;
+}
+
+/* Navbar Personalizado */
+.navbar-custom {
+  background-color: rgba(13, 7, 4, 0.9) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(200, 150, 62, 0.15);
+  padding: 15px 0;
+  transition: var(--transition-smooth);
+}
+
+.navbar-custom .navbar-brand {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo-img {
+  height: 48px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.navbar-custom .nav-link {
+  color: var(--color-cream-dark);
+  font-weight: 500;
+  font-size: 1.05rem;
+  padding: 8px 16px !important;
+  transition: var(--transition-smooth);
+  border-bottom: 2px solid transparent;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  color: var(--color-caramel) !important;
+  border-bottom-color: var(--color-caramel);
+}
+
+/* Footer Personalizado */
+.footer-custom {
+  background-color: var(--color-mocha);
+  border-top: 1px solid rgba(200, 150, 62, 0.15);
+  padding: 50px 0 20px;
+  color: var(--color-cream-dark);
+}
+
+/* Galería Interactiva */
+.gallery-item-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  aspect-ratio: 1;
+  cursor: pointer;
+  border: 1px solid rgba(200, 150, 62, 0.1);
+  background-color: var(--color-mocha);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 7, 4, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition-smooth);
+}
+
+.gallery-item-container:hover .gallery-image {
+  transform: scale(1.08);
+  filter: blur(2px);
+}
+
+.gallery-item-container:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Contador de Promoción Widget */
+.countdown-box {
+  background: linear-gradient(135deg, var(--color-mocha), var(--color-mocha-light));
+  border: 2px solid var(--color-caramel);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+.countdown-digits {
+  font-family: var(--font-sans);
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--color-cream);
+  background: rgba(13, 7, 4, 0.5);
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(200, 150, 62, 0.2);
+  min-width: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.countdown-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-caramel);
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* Lightbox Modal */
+.lightbox-modal .modal-content {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.lightbox-img {
+  max-height: 80vh;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Formularios Personalizados */
+.form-custom-control {
+  background-color: rgba(13, 7, 4, 0.5) !important;
+  border: 1px solid rgba(200, 150, 62, 0.2) !important;
+  color: var(--color-cream) !important;
+  padding: 12px 18px !important;
+  border-radius: 8px !important;
+  transition: var(--transition-smooth) !important;
+}
+
+.form-custom-control:focus {
+  border-color: var(--color-caramel) !important;
+  box-shadow: 0 0 0 0.25rem rgba(200, 150, 62, 0.25) !important;
+  background-color: rgba(13, 7, 4, 0.8) !important;
+}
+
+/* Sucursales Map Container */
+.map-container {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgba(200, 150, 62, 0.2);
+  height: 250px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* --- OVERRIDES PARA MODO CLARO PREMIUM --- */
+body.light-theme .navbar-custom {
+  background-color: rgba(252, 250, 246, 0.9) !important;
+  border-bottom: 1px solid rgba(184, 129, 31, 0.2);
+}
+
+body.light-theme .navbar-custom .navbar-brand span.text-cream {
+  color: var(--color-cream-dark) !important;
+}
+
+body.light-theme .navbar-custom .nav-link {
+  color: var(--color-cream-dark) !important;
+}
+
+body.light-theme .navbar-custom .nav-link:hover,
+body.light-theme .navbar-custom .nav-link.active {
+  color: var(--color-caramel) !important;
+}
+
+body.light-theme .hero-banner {
+  background: linear-gradient(rgba(252, 250, 246, 0.4), rgba(252, 250, 246, 0.9)), url('https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1600');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+body.light-theme .hero-content {
+  background: rgba(243, 237, 216, 0.85);
+  border-color: rgba(184, 129, 31, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .hero-title {
+  background: linear-gradient(45deg, var(--color-cream), var(--color-caramel));
+  -webkit-background-clip: text;
+   background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body.light-theme .coffee-card {
+  background-color: var(--color-mocha) !important;
+  border-color: rgba(184, 129, 31, 0.15) !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+body.light-theme .coffee-card:hover {
+  box-shadow: 0 10px 25px rgba(184, 129, 31, 0.15);
+  border-color: rgba(184, 129, 31, 0.3) !important;
+}
+
+body.light-theme .glass-card {
+  background: rgba(243, 237, 216, 0.75) !important;
+  border-color: rgba(184, 129, 31, 0.2) !important;
+}
+
+body.light-theme .countdown-box {
+  background: linear-gradient(135deg, var(--color-mocha), var(--color-mocha-light)) !important;
+  border-color: var(--color-caramel) !important;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+body.light-theme .countdown-digits {
+  color: var(--color-cream-dark) !important;
+  background: rgba(252, 250, 246, 0.8) !important;
+  border-color: rgba(184, 129, 31, 0.2) !important;
+}
+
+body.light-theme .form-custom-control {
+  background-color: rgba(252, 250, 246, 0.7) !important;
+  border-color: rgba(184, 129, 31, 0.25) !important;
+  color: var(--color-cream-dark) !important;
+}
+
+body.light-theme .form-custom-control:focus {
+  background-color: rgba(252, 250, 246, 0.95) !important;
+  border-color: var(--color-caramel) !important;
+}
+
+body.light-theme .gallery-overlay {
+  background: rgba(252, 250, 246, 0.85);
+}
+
+body.light-theme .gallery-overlay h5 {
+  color: var(--color-cream-dark) !important;
+}
+
+body.light-theme .gallery-overlay p {
+  color: var(--color-cream-dark) !important;
+}
+
+body.light-theme .card-title,
+body.light-theme .text-cream,
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4,
+body.light-theme h5 {
+  color: var(--color-cream-dark) !important;
+}
+
+body.light-theme .card-text,
+body.light-theme .text-cream-dark,
+body.light-theme p {
+  color: var(--color-cream-dark) !important;
+}
+
+body.light-theme .footer-custom {
+  background-color: var(--color-mocha) !important;
+  border-top: 1px solid rgba(184, 129, 31, 0.2) !important;
+}
+
+body.light-theme .carousel-item .bg-espresso {
+  background-color: var(--color-mocha) !important;
+}
+
+body.light-theme .btn-close-white {
+  filter: invert(1) !important;
+}
+ 
+input.form-control.form-custom-control.placeholder-cream::placeholder {
+  color: #c5a059 !important; /* Dorado sutil / bronce */
+  opacity: 1 !important;
+}
+
+[data-bs-theme="dark"] input.form-control.form-custom-control.placeholder-cream::placeholder {
+  color: #e5c158 !important; /* Dorado brillante / caramelo */
+  opacity: 0.8 !important;
+}
