@@ -20,7 +20,7 @@ const Promociones: React.FC = () => {
 
   const precioDescuento = oferta.precioOriginal * (1 - oferta.descuento / 100);
 
-  // Lista de promociones semanales usando el nuevo formato
+  // Lista de promociones semanales
   const promocionesSemanales: PromocionData[] = [
     {
       id: 0,
@@ -63,14 +63,16 @@ const Promociones: React.FC = () => {
       </div>
 
       <div className="row g-5 align-items-center mb-5">
-        {/* Columna Guía de Canje (Sustituye al Temporizador) */}
+        {/* Columna Guía de Canje */}
         <div className="col-lg-6">
           <div className="text-center text-lg-start mb-4">
-            <span className="badge bg-danger text-uppercase px-3 py-2 fs-6 mb-2">🔥 ¡OFERTA ESTRELLA DEL DÍA!</span>
+            <span className="badge bg-danger text-uppercase px-3 py-2 fs-6 mb-2">
+              <i className="bi bi-fire me-2"></i>¡OFERTA ESTRELLA DEL DÍA!
+            </span>
             <h2 className="text-cream fw-bold display-6 font-serif">{oferta.nombre}</h2>
           </div>
           
-          {/* Tarjeta explicativa del cupón en lugar del countdown */}
+          {/* Tarjeta explicativa del cupón */}
           <div className="countdown-box p-4 mb-4">
             <h4 className="text-cream fw-bold mb-3 font-serif"><i className="bi bi-gift-fill text-caramel me-2"></i>¿Cómo funciona tu Cupón Diario?</h4>
             
@@ -128,7 +130,7 @@ const Promociones: React.FC = () => {
         </div>
       </div>
 
-      {/* Sección Carrusel de Combos y Ofertas (Bootstrap Carousel) */}
+      {/* Sección Carrusel de Combos y Ofertas */}
       <div className="my-5 py-4 bg-coffee-dark rounded-4 p-4 p-md-5 border border-secondary">
         <div className="text-center mb-5">
           <span className="text-caramel font-monospace text-uppercase">Combos Especiales</span>

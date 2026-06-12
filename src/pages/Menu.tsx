@@ -34,7 +34,7 @@ const Menu: React.FC = () => {
 
       {/* Panel de Filtros y Buscador */}
       <div className="row g-4 mb-5 align-items-center justify-content-between">
-        {/* Botones de Categorías (Bootstrap Group) */}
+        {/* Botones de Categorías */}
         <div className="col-lg-6 col-md-12 d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
           <button 
             onClick={() => setCategoriaActiva('todos')}
@@ -42,7 +42,7 @@ const Menu: React.FC = () => {
               categoriaActiva === 'todos' ? 'btn-caramel' : 'btn-outline-caramel'
             }`}
           >
-            ☕ Todos
+            <i className="bi bi-cup-hot-fill me-1"></i> Todos
           </button>
           <button 
             onClick={() => setCategoriaActiva('caliente')}
@@ -50,7 +50,7 @@ const Menu: React.FC = () => {
               categoriaActiva === 'caliente' ? 'btn-caramel' : 'btn-outline-caramel'
             }`}
           >
-            🔥 Calientes
+            <i className="bi bi-fire me-1"></i> Calientes
           </button>
           <button 
             onClick={() => setCategoriaActiva('frio')}
@@ -58,7 +58,7 @@ const Menu: React.FC = () => {
               categoriaActiva === 'frio' ? 'btn-caramel' : 'btn-outline-caramel'
             }`}
           >
-            ❄️ Fríos
+            <i className="bi bi-snow me-1"></i> Fríos
           </button>
           <button 
             onClick={() => setCategoriaActiva('postre')}
@@ -66,7 +66,7 @@ const Menu: React.FC = () => {
               categoriaActiva === 'postre' ? 'btn-caramel' : 'btn-outline-caramel'
             }`}
           >
-            🍰 Postres
+            <i className="bi bi-cake2-fill me-1"></i> Postres
           </button>
         </div>
 

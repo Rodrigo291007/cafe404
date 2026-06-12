@@ -1,10 +1,10 @@
-/* Estilos específicos para la aplicación Café 404 */
+/* Estilos específicos */
 
 /* Hero / Banner Principal */
 .hero-banner {
   position: relative;
   min-height: 80vh;
-  background: linear-gradient(rgba(13, 7, 4, 0.45), rgba(13, 7, 4, 0.95)), url('https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1600');
+  background: linear-gradient(rgba(33, 19, 13, 0.45), rgba(33, 19, 13, 0.95)), url('https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1600');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,10 +18,10 @@
 .hero-content {
   text-align: center;
   max-width: 800px;
-  background: rgba(26, 15, 7, 0.75);
+  background: rgba(47, 28, 20, 0.75);
   padding: 40px;
   border-radius: 20px;
-  border: 1px solid rgba(200, 150, 62, 0.2);
+  border: 1px solid rgba(176, 132, 92, 0.2);
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
@@ -49,7 +49,7 @@
 /* Card Estilo Cafe 404 */
 .coffee-card {
   background-color: var(--color-mocha);
-  border: 1px solid rgba(200, 150, 62, 0.1);
+  border: 1px solid rgba(176, 132, 92, 0.15);
   border-radius: 16px;
   overflow: hidden;
   transition: var(--transition-smooth);
@@ -58,8 +58,8 @@
 
 .coffee-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(200, 150, 62, 0.15);
-  border-color: rgba(200, 150, 62, 0.3);
+  box-shadow: 0 10px 25px rgba(176, 132, 92, 0.2);
+  border-color: rgba(176, 132, 92, 0.35);
 }
 
 .coffee-card-img-container {
@@ -94,9 +94,9 @@
 
 /* Navbar Personalizado */
 .navbar-custom {
-  background-color: rgba(13, 7, 4, 0.9) !important;
+  background-color: rgba(33, 19, 13, 0.9) !important;
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(200, 150, 62, 0.15);
+  border-bottom: 1px solid rgba(176, 132, 92, 0.15);
   padding: 15px 0;
   transition: var(--transition-smooth);
 }
@@ -134,7 +134,7 @@
 /* Footer Personalizado */
 .footer-custom {
   background-color: var(--color-mocha);
-  border-top: 1px solid rgba(200, 150, 62, 0.15);
+  border-top: 1px solid rgba(176, 132, 92, 0.15);
   padding: 50px 0 20px;
   color: var(--color-cream-dark);
 }
@@ -146,7 +146,7 @@
   border-radius: 12px;
   aspect-ratio: 1;
   cursor: pointer;
-  border: 1px solid rgba(200, 150, 62, 0.1);
+  border: 1px solid rgba(176, 132, 92, 0.1);
   background-color: var(--color-mocha);
 }
 
@@ -163,7 +163,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(13, 7, 4, 0.7);
+  background: rgba(33, 19, 13, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,10 +194,10 @@
   font-size: 2.8rem;
   font-weight: 800;
   color: var(--color-cream);
-  background: rgba(13, 7, 4, 0.5);
+  background: rgba(33, 19, 13, 0.5);
   padding: 10px 15px;
   border-radius: 10px;
-  border: 1px solid rgba(200, 150, 62, 0.2);
+  border: 1px solid rgba(176, 132, 92, 0.2);
   min-width: 80px;
   text-align: center;
   display: inline-block;
@@ -226,8 +226,8 @@
 
 /* Formularios Personalizados */
 .form-custom-control {
-  background-color: rgba(13, 7, 4, 0.5) !important;
-  border: 1px solid rgba(200, 150, 62, 0.2) !important;
+  background-color: rgba(33, 19, 13, 0.5) !important;
+  border: 1px solid rgba(176, 132, 92, 0.2) !important;
   color: var(--color-cream) !important;
   padding: 12px 18px !important;
   border-radius: 8px !important;
@@ -236,15 +236,15 @@
 
 .form-custom-control:focus {
   border-color: var(--color-caramel) !important;
-  box-shadow: 0 0 0 0.25rem rgba(200, 150, 62, 0.25) !important;
-  background-color: rgba(13, 7, 4, 0.8) !important;
+  box-shadow: 0 0 0 0.25rem rgba(176, 132, 92, 0.25) !important;
+  background-color: rgba(33, 19, 13, 0.8) !important;
 }
 
 /* Sucursales Map Container */
 .map-container {
   overflow: hidden;
   border-radius: 12px;
-  border: 1px solid rgba(200, 150, 62, 0.2);
+  border: 1px solid rgba(176, 132, 92, 0.2);
   height: 250px;
 }
 
@@ -256,8 +256,8 @@
 
 /* --- OVERRIDES PARA MODO CLARO PREMIUM --- */
 body.light-theme .navbar-custom {
-  background-color: rgba(252, 250, 246, 0.9) !important;
-  border-bottom: 1px solid rgba(184, 129, 31, 0.2);
+  background-color: rgba(232, 223, 216, 0.9) !important;
+  border-bottom: 1px solid rgba(112, 66, 20, 0.2);
 }
 
 body.light-theme .navbar-custom .navbar-brand span.text-cream {
@@ -274,15 +274,15 @@ body.light-theme .navbar-custom .nav-link.active {
 }
 
 body.light-theme .hero-banner {
-  background: linear-gradient(rgba(252, 250, 246, 0.4), rgba(252, 250, 246, 0.9)), url('https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1600');
+  background: linear-gradient(rgba(232, 223, 216, 0.4), rgba(232, 223, 216, 0.9)), url('https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1600');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 body.light-theme .hero-content {
-  background: rgba(243, 237, 216, 0.85);
-  border-color: rgba(184, 129, 31, 0.3);
+  background: rgba(247, 240, 230, 0.85);
+  border-color: rgba(112, 66, 20, 0.3);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
@@ -295,18 +295,18 @@ body.light-theme .hero-title {
 
 body.light-theme .coffee-card {
   background-color: var(--color-mocha) !important;
-  border-color: rgba(184, 129, 31, 0.15) !important;
+  border-color: rgba(112, 66, 20, 0.15) !important;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 body.light-theme .coffee-card:hover {
-  box-shadow: 0 10px 25px rgba(184, 129, 31, 0.15);
-  border-color: rgba(184, 129, 31, 0.3) !important;
+  box-shadow: 0 10px 25px rgba(112, 66, 20, 0.15);
+  border-color: rgba(112, 66, 20, 0.3) !important;
 }
 
 body.light-theme .glass-card {
-  background: rgba(243, 237, 216, 0.75) !important;
-  border-color: rgba(184, 129, 31, 0.2) !important;
+  background: rgba(247, 240, 230, 0.75) !important;
+  border-color: rgba(112, 66, 20, 0.2) !important;
 }
 
 body.light-theme .countdown-box {
@@ -317,23 +317,23 @@ body.light-theme .countdown-box {
 
 body.light-theme .countdown-digits {
   color: var(--color-cream-dark) !important;
-  background: rgba(252, 250, 246, 0.8) !important;
-  border-color: rgba(184, 129, 31, 0.2) !important;
+  background: rgba(232, 223, 216, 0.8) !important;
+  border-color: rgba(112, 66, 20, 0.2) !important;
 }
 
 body.light-theme .form-custom-control {
-  background-color: rgba(252, 250, 246, 0.7) !important;
-  border-color: rgba(184, 129, 31, 0.25) !important;
+  background-color: rgba(232, 223, 216, 0.7) !important;
+  border-color: rgba(112, 66, 20, 0.25) !important;
   color: var(--color-cream-dark) !important;
 }
 
 body.light-theme .form-custom-control:focus {
-  background-color: rgba(252, 250, 246, 0.95) !important;
+  background-color: rgba(232, 223, 216, 0.95) !important;
   border-color: var(--color-caramel) !important;
 }
 
 body.light-theme .gallery-overlay {
-  background: rgba(252, 250, 246, 0.85);
+  background: rgba(232, 223, 216, 0.85);
 }
 
 body.light-theme .gallery-overlay h5 {
@@ -362,7 +362,7 @@ body.light-theme p {
 
 body.light-theme .footer-custom {
   background-color: var(--color-mocha) !important;
-  border-top: 1px solid rgba(184, 129, 31, 0.2) !important;
+  border-top: 1px solid rgba(112, 66, 20, 0.2) !important;
 }
 
 body.light-theme .carousel-item .bg-espresso {

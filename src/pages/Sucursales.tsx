@@ -13,7 +13,7 @@ const Sucursales: React.FC = () => {
       direccion: "Centro Comercial Metrocentro Santa Ana, Santa Ana, El Salvador",
       horario: "Lunes a Domingo: 7:00 AM - 8:30 PM",
       telefono: "2440-1234",
-      mapaIframeUrl: "" // Ya no se ocupa iframe individual
+      mapaIframeUrl: "" 
     },
     {
       id: 2,
@@ -113,7 +113,7 @@ const Sucursales: React.FC = () => {
               height: '500px', 
               width: '100%', 
               borderRadius: '16px', 
-              border: '2px solid rgba(200, 150, 62, 0.3)',
+              border: '2px solid rgba(176, 132, 92, 0.3)',
               position: 'relative',
               zIndex: 1
             }}

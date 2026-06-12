@@ -9,13 +9,14 @@ const CardProducto: React.FC<CardProductoProps> = ({ producto }) => {
   return (
     <div className="coffee-card card border-0 h-100 animate-fade-in">
       <div className="coffee-card-img-container">
-        {/* Tipo Badge */}
+        {/* Tipo Badge (icono) */}
         <span className={`coffee-card-badge ${
           producto.tipo === 'caliente' ? 'bg-danger text-white' : 
           producto.tipo === 'frio' ? 'bg-info text-dark' : 'bg-warning text-dark'
         }`}>
-          {producto.tipo === 'caliente' ? '🔥 Caliente' : 
-           producto.tipo === 'frio' ? '❄️ Frío' : '🍰 Postre'}
+          {producto.tipo === 'caliente' ? <><i className="bi bi-fire me-1"></i> Caliente</> : 
+           producto.tipo === 'frio' ? <><i className="bi bi-snow me-1"></i> Frío</> : 
+           <><i className="bi bi-cake2-fill me-1"></i> Postre</>}
         </span>
         <img 
           src={producto.imagen} 

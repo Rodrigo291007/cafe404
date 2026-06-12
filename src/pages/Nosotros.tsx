@@ -3,7 +3,7 @@ import CardEquipo from '../components/CardEquipo';
 import type { EquipoMiembro } from '../components/CardEquipo';
 
 const Nosotros: React.FC = () => {
-  // Lista de miembros del equipo basada en los integrantes provistos
+  // Lista de miembros del equipo
   const equipo: EquipoMiembro[] = [
     {
       id: 1,
@@ -31,7 +31,7 @@ const Nosotros: React.FC = () => {
     },
     {
       id: 4,
-      nombre: "José Rodrigo Zavala",
+      nombre: "José Rodrigo Zavala Lemus",
       rol: "Coordinador de Alianzas",
       correo: "jose.zavala26@cafe404.com",
       bio: "Dedica su tiempo a establecer vínculos éticos con caficultores locales, promoviendo el comercio justo y ecológico.",
@@ -43,22 +43,26 @@ const Nosotros: React.FC = () => {
   const datosCuriosos = [
     {
       id: "curiosidad1",
-      titulo: "🐐 El origen gracias a las cabras",
+      icon: "bi-compass-fill",
+      titulo: "El origen gracias a las cabras",
       contenido: "La leyenda cuenta que en el siglo IX, un pastor de cabras etíope llamado Kaldi notó que su rebaño se comportaba de manera inusualmente enérgica después de comer las cerezas rojas de un arbusto silvestre. Así se descubrieron las propiedades estimulantes del cafeto."
     },
     {
       id: "curiosidad2",
-      titulo: "🛢️ El segundo bien más comercializado",
+      icon: "bi-globe2",
+      titulo: "El segundo bien más comercializado",
       contenido: "El café es el segundo producto básico más comercializado en todo el planeta, superado únicamente por el petróleo crudo. Se consumen alrededor de 2,250 millones de tazas de café al día en el mundo."
     },
     {
       id: "curiosidad3",
-      titulo: "🧪 Café 404: Una búsqueda inesperada",
+      icon: "bi-search-heart",
+      titulo: "Café 404: Una búsqueda inesperada",
       contenido: "Nuestro nombre se inspira en el famoso error de Internet '404 Not Found'. Decidimos llamarnos así porque representamos ese rincón escondido y perfecto de paz y sabor que no sabías que existía ni que estabas buscando, pero que finalmente has encontrado."
     },
     {
       id: "curiosidad4",
-      titulo: "💧 El agua es clave",
+      icon: "bi-droplet-fill",
+      titulo: "El agua es clave",
       contenido: "Una taza de café filtrado es aproximadamente 98% agua. Esto significa que la calidad del agua utilizada (mineralización y temperatura a 90°C) influye casi tanto en el sabor final como la misma selección de granos tostados."
     }
   ];
@@ -175,7 +179,7 @@ const Nosotros: React.FC = () => {
                   aria-controls={`collapse-${item.id}`}
                   style={{ boxShadow: 'none' }}
                 >
-                  {item.titulo}
+                  <i className={`bi ${item.icon} text-caramel me-2`}></i>{item.titulo}
                 </button>
               </h2>
               <div 

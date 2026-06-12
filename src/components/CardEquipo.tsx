@@ -24,11 +24,11 @@ const CardEquipo: React.FC<CardEquipoProps> = ({ miembro }) => {
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}
         />
         <div className="position-absolute bottom-0 end-0 bg-caramel text-dark rounded-circle d-flex align-items-center justify-content-center fw-bold" style={{ width: '32px', height: '32px', fontSize: '0.75rem' }}>
-          ☕
+          <i className="bi bi-star-fill text-dark"></i>
         </div>
       </div>
       
-      <h4 className="text-cream fw-bold mb-1 font-serif">{miembro.nombre}</h4>
+      <h5 className="text-cream fw-bold mb-1 font-serif">{miembro.nombre}</h5>
       <span className="badge bg-secondary text-caramel border border-secondary mb-2 text-uppercase font-monospace" style={{ fontSize: '0.75rem' }}>
         {miembro.rol}
       </span>

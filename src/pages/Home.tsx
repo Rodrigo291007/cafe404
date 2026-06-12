@@ -8,13 +8,15 @@ const Home: React.FC = () => {
 
   return (
     <div className="animate-fade-in text-start">
-      {/* Banner Principal / Hero Section */}
+      {/* Banner Principal */}
       <section className="hero-banner d-flex align-items-center">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8">
               <div className="hero-content text-center py-5">
-                <span className="text-caramel font-monospace text-uppercase tracking-wider mb-2 d-inline-block">☕ Café de Especialidad</span>
+                <span className="text-caramel font-monospace text-uppercase tracking-wider mb-2 d-inline-block">
+                  <i className="bi bi-cup-hot-fill me-2"></i>Café de Especialidad
+                </span>
                 <h1 className="hero-title">Café 404</h1>
                 <p className="fs-5 text-cream-dark mb-4">
                   "Simple. Real. Delicioso." Encontraste el rincón perfecto que no sabías que estabas buscando.

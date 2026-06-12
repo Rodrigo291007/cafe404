@@ -119,12 +119,12 @@ const Galeria: React.FC = () => {
         ))}
       </div>
 
-      {/* MODAL LIGHTBOX DINÁMICO (Bootstrap Modal Customizado) */}
+      {/* MODAL LIGHTBOX DINÁMICO */}
       {indexActivo !== null && (
         <div 
           className="modal fade show d-block" 
           tabIndex={-1} 
-          style={{ backgroundColor: 'rgba(13, 7, 4, 0.95)', zIndex: 1060 }}
+          style={{ backgroundColor: 'rgba(33, 19, 13, 0.95)', zIndex: 1060 }}
           onClick={cerrarLightbox}
         >
           <div className="modal-dialog modal-dialog-centered modal-lg lightbox-modal">
@@ -150,7 +150,7 @@ const Galeria: React.FC = () => {
                 {/* Controles de Diapositivas */}
                 <button 
                   className="btn btn-dark text-caramel border-0 position-absolute start-0 top-50 translate-middle-y ms-3 d-flex align-items-center justify-content-center"
-                  style={{ width: '45px', height: '45px', borderRadius: '50%', backgroundColor: 'rgba(26, 15, 7, 0.75)' }}
+                  style={{ width: '45px', height: '45px', borderRadius: '50%', backgroundColor: 'rgba(47, 28, 20, 0.75)' }}
                   onClick={anteriorImagen}
                 >
                   <i className="bi bi-chevron-left fs-4"></i>
@@ -158,7 +158,7 @@ const Galeria: React.FC = () => {
                 
                 <button 
                   className="btn btn-dark text-caramel border-0 position-absolute end-0 top-50 translate-middle-y me-3 d-flex align-items-center justify-content-center"
-                  style={{ width: '45px', height: '45px', borderRadius: '50%', backgroundColor: 'rgba(26, 15, 7, 0.75)' }}
+                  style={{ width: '45px', height: '45px', borderRadius: '50%', backgroundColor: 'rgba(47, 28, 20, 0.75)' }}
                   onClick={iframeSiguienteImagen}
                 >
                   <i className="bi bi-chevron-right fs-4"></i>

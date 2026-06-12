@@ -12,7 +12,7 @@ import Galeria from '../pages/Galeria';
 import Nosotros from '../pages/Nosotros';
 
 const AppRouter: React.FC = () => {
-  // Manejo de estado del Tema Claro/Oscuro (Sin localStorage)
+  // Manejo de estado del Tema Claro/Oscuro
   const [isLightTheme, setIsLightTheme] = useState<boolean>(false);
 
   const toggleTheme = () => {
@@ -44,7 +44,7 @@ const AppRouter: React.FC = () => {
             <Route path="/galeria" element={<Galeria />} />
             <Route path="/nosotros" element={<Nosotros />} />
             
-            {/* Redirección por defecto si la ruta no existe (redirige a Inicio) */}
+            {/* Redirección por defecto si la ruta no existe */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
